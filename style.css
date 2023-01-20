@@ -1,0 +1,63 @@
+body{
+    background-color: #f0d6df;
+    font-family: Poppins,sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    max-width: 52rem;
+    line-height : 25px;
+}
+/* -------------------------- header ------------------------- */
+header{
+    background-color: #1b1337;
+    justify-content: center;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.container-cabecera{
+    display: block;
+    padding: 5px 0px;
+    margin-top: 0px;
+
+}
+/* ----------------Logo ---------------------------- */
+.logo-img{
+    width: 100%;
+    height: 400px;
+    padding-top: 3px;
+    margin: 0px;
+    border: 0px;
+}
+/* -----------------Opciones de menu------------------------ */
+.conteiner-menu{
+    margin: 0;
+    padding: 20px 15px;
+    text-align: center;
+    background-color: #c49fe9;
+    border-radius: 10px;
+}
+
+.opcion{
+    text-decoration:none;
+    font-size: 30px;
+    color: #1b1337;
+    margin: 1rem;
+}
+
+/* ============================= section =========================== */
+
+.subtitulo {
+    color: #040000;
+    font-size: 1,5rem;
+    text-transform: uppercase;
+    margin: 44px 0px 0px;
+}
+
+.texto{
+    letter-spacing: 0.5px;
+    font-size: 1rem;
+    text-align: justify;
+
+}

@@ -1,0 +1,51 @@
+.envoltorio-tarjetas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap:80px;
+}
+
+.tarjeta{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #1b1337;
+    box-shadow:0 0 40px -15px #000;
+    border-radius: 25px;
+    overflow: auto;
+
+}
+.imagen-superior-tarjeta{
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: #ffffff;
+}
+ .envoltorio-logo-estudio{
+     background-color: white;
+ }
+
+.descripcion-tarjetas{
+    font-size: 0.8rem;
+    margin: 5px;
+
+}
+h3{
+    font-size:1.5rem;
+    text-align: center;
+}
+h4{
+    margin: 3px;
+}
+.icono{
+    height: 30px;
+    margin: 10px;
+}
+.envolorio-iconos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
