@@ -1,0 +1,10 @@
+@media(max-width: 550px){
+    .envoltorio-tarjetas{
+        display: flex;
+        flex-direction: column;
+    }
+    .conteiner-menu{
+        display: flex;
+        flex-direction: column;
+    }
+}

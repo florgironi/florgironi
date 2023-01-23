@@ -15,3 +15,7 @@
 .ancla-proyecto{
     display: flex;
 }
+.descripcion-tarjetas{ 
+    padding: 5px 25px;
+    text-align: justify;
+}
