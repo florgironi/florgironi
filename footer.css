@@ -4,7 +4,7 @@ footer{
     background-position: center;
     height: 100%;
     color: #ffffff;
-    padding: 20px 5px;
+    padding: 0.5rem 3rem;
 }
 .envoltorio-footer{
     display: flex;
@@ -23,6 +23,7 @@ ul{
 }
 .tarjeta-contacto:hover{
     cursor: pointer;
+    transform: scale(1.10);
 }
 .icono-footer{
     height: 30px;
@@ -33,7 +34,7 @@ li{
     margin: 10px;
     font-size: larger;
 }
-a{
+.ancla-footer{
     text-decoration:none;
     color: white;
 }

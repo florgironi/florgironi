@@ -12,8 +12,8 @@
     margin:10px 0;
     padding-bottom:10px;
     width: 237px;
-    color:#ffffff;
-    border-bottom:3px solid #ffffff
+    color:#1b1337;
+    border-bottom:3px solid #1b1337;
 }
 input{
     width:100%;
@@ -24,29 +24,29 @@ input{
     resize:none;
     border:0;
     transition:all .3s;
-    border-bottom:2px solid #ffffff
+    border-bottom:2px solid #1b1337;
 }
 input:focus{
-    border-bottom:2px solid #ffffff
+    border-bottom:2px solid #1b1337;
 }
 .p-form:before{
     content:attr(type);
     display:block;
     margin:28px 0 0;
     font-size:14px;
-    color:white
+    color:#1b1337;
 }
 button{
     float:right;
     padding:8px 12px;
     margin:8px 0 0;
-    border:2px solid #ffffff;
+    border:2px solid #1b1337;
     background:0;
-    color:#ffffff;
+    color:hwb(0 36% 64%);
     cursor:pointer;
     transition:all .3s}
 button:hover{
-    background:#78788c;
+    background:#1b1337;
     color:#fff
 }
 

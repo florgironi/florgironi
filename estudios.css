@@ -8,7 +8,6 @@
 
 .tarjeta{
     height: auto;
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,8 +16,13 @@
     box-shadow:0 0 40px -15px #000;
     border-radius: 25px;
     overflow: auto;
+    padding: 10%;
 
 }
+.tarjeta:hover{
+    transform: scale(1.03);
+}
+
 .imagen-superior-tarjeta{
     height: 100%;
     width: 100%;
