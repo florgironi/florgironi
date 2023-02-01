@@ -1,67 +1,90 @@
 :root{
-    --background-white:white;
-    --background-violet:#1b1337;
+    --white:white;
+    --strong-violet:#1b1337;
     --xl-font-size:30px;
     --m-font-size:25px;
     --s-font-size:20px;
     --line-height:30px;
     --color-text-gray:hsl(0, 0%, 28%);
+    --color-violet-light:#c49fe9;
 }
 
 body{
-    background-color: var(--background-white);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--white);
     font-family: Poppins,sans-serif;
-    margin-left: auto;
-    margin-right: auto;
     height: 100%;
-    max-width: 90%;
     line-height : 30px;
     color: var(--color-text-gray);
+    display: grid;
+}
+main{
+    max-width: 90%;
+    justify-self: center;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 /* -------------------------- header ------------------------- */
 header{
-    background-color: var(--background-violet);
     justify-content: center;
-    padding: 4px;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 .container-cabecera{
-    display: block;
-    padding: 5px 0px;
-    margin-top: 0px;
-
-}
-/* ---------------- Logo ---------------------------- */
-.logo-img{
+    display: flex;
     width: 100%;
-    height: 100%;
-    padding-top: 3px;
-    margin: 0px;
-    border: 0px;
+    justify-content: space-evenly;
+    padding: 50px;
+    background: linear-gradient(187deg, rgba(28,21,55,1) 38%, rgba(196,159,233,1) 92%, rgba(196,159,233,1) 93%);
+}
+
+.container-cabecera img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
     min-height: calc(100% / 6);
 }
+.container-cabecera div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--white);
+}
+.container-cabecera div h1{
+    font-size: xxx-large;
+    line-height: normal;
+}
+.container-cabecera div h2{
+    margin: 0;
+    border-bottom: 2px solid var(--white);
+    padding-bottom: 30px;
+}
+
 /* ----------------- Opciones de menu ------------------------ */
 .conteiner-menu{
     margin: 0;
     padding: 20px 15px;
     text-align: center;
-    background-color: #c49fe9;
-    border-radius: 10px;
+    background-color: var(--color-violet-light);
+    width: 100%;
+    border-bottom: 2px solid rgba(196, 159, 233, .8);
 }
 
 .opcion{
     text-decoration:none;
     font-size: var(--xl-font-size);
-    color: #1b1337;
+    color: var(--strong-violet);
     margin: 1rem;
 }
 
 /* ============================= Section Sobre Mi =========================== */
 
 .subtitulo {
-    color: #040000;
+    color: var(--color-text-gray);
     font-size: 1,5rem;
     text-transform: uppercase;
     margin: 44px 0px 0px;

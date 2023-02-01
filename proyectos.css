@@ -1,10 +1,11 @@
+
 .tarjeta-proyecto{
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #1b1337;
+    color: var(--strong-violet);
     box-shadow:0 0 40px -15px #000;
     border-radius: 25px;
     overflow: auto;

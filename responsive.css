@@ -2,10 +2,24 @@
     .envoltorio-tarjetas{
         display: flex;
         flex-direction: column;
+        margin: 0;
+    }
+    .tarjeta-proyecto{
+        margin: 0;
     }
     .conteiner-menu{
-        display: flex;
+        display: none;
+    }
+    .container-cabecera{
         flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+    main{
+        width: 100vw;
+    }
+    .footer{
+        padding: 0;
     }
     
 }
