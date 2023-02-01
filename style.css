@@ -1,16 +1,26 @@
+:root{
+    --background-white:white;
+    --background-violet:#1b1337;
+    --xl-font-size:30px;
+    --m-font-size:25px;
+    --s-font-size:20px;
+    --line-height:30px;
+    --color-text-gray:hsl(0, 0%, 28%);
+}
+
 body{
-    /* background-color: #f0d6df; */
-    background-color: #fff;
+    background-color: var(--background-white);
     font-family: Poppins,sans-serif;
     margin-left: auto;
     margin-right: auto;
     height: 100%;
     max-width: 90%;
-    line-height : 25px;
+    line-height : 30px;
+    color: var(--color-text-gray);
 }
 /* -------------------------- header ------------------------- */
 header{
-    background-color: #1b1337;
+    background-color: var(--background-violet);
     justify-content: center;
     padding: 4px;
     display: flex;
@@ -43,7 +53,7 @@ header{
 
 .opcion{
     text-decoration:none;
-    font-size: 30px;
+    font-size: var(--xl-font-size);
     color: #1b1337;
     margin: 1rem;
 }
@@ -59,7 +69,7 @@ header{
 
 .texto{
     letter-spacing: 0.5px;
-    font-size: 1rem;
+    font-size: var(--m-font-size);
     text-align: justify;
-
 }
+
