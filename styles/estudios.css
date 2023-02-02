@@ -1,0 +1,67 @@
+.estudios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.envoltorio-tarjetas{
+    display: flex;
+    justify-items: center;
+    gap: 3rem;
+    width: 90%;
+    margin: 3rem 0;
+}
+.tarjeta{
+    height: auto;
+    min-width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    overflow: auto;
+    padding: 1rem;
+    background: var(--tarjeta-color-violet);
+    width: 15rem;
+}
+.tarjeta:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 20px 1px var(--primary-color-violet);
+}
+.tarjeta-visible{
+    display: flex;
+    flex-direction: column;
+}
+#descripcion-estudios{
+    display: none;
+    /* display: flex; */
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.imagen-superior-tarjeta{
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+ .envoltorio-logo-estudio{
+     background-color: var(--white);
+}
+h3{
+    font-size:1.5rem;
+    text-align: center;
+    margin: 1rem 0 0;
+}
+.envolorio-iconos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.envolorio-iconos i{
+    font-size: 30px;
+    margin: 10px;
+}
+.envolorio-iconos img{
+    height: 30px;
+    margin: 10px;
+}

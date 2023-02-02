@@ -1,0 +1,44 @@
+.proyectos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tarjeta-proyecto{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--box-shadow-violet);
+    border-radius: 25px;
+    overflow: auto;
+    padding: 10%;
+    width: 400px;
+    background: var(--tarjeta-color-violet);
+}
+.tarjeta-proyecto:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 20px 1px var(--primary-color-violet);
+
+}
+.ancla-proyecto{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+.ancla-proyecto h3{
+    color: var(--white);
+}
+.ancla-proyecto:hover{
+    transform: scale(1.5);
+}
+.descripcion-tarjetas-proyectos{ 
+    padding: 5px 25px;
+    text-align: justify;
+}
+.imagen-superior-tarjeta{
+    position: relative;
+    z-index: 10;
+}
+
+

@@ -1,0 +1,273 @@
+:root{
+    --white:white;
+    --xl-font-size:30px;
+    --m-font-size:25px;
+    --s-font-size:20px;
+    --line-height:30px;
+    --color-text-gray:hsl(0, 0%, 28%);
+    --primary-color-violet:#1b1337;
+    --secundary-color-violet:#c49fe9;
+    --tercery-color-background:#605685;
+    --otro-color-violet:#483659;
+    --tarjeta-color-violet:rgba(27, 19, 55, 0.3);
+    --tarjeta-color-blanca:rgba(255, 255, 255, 0.4);
+    --background-gradient:linear-gradient(187deg, rgba(28,21,55,1) 38%, rgba(196,159,233,1) 92%, rgba(196,159,233,1) 93%);
+    --box-shadow-black: 0 0 50px -15px #000;
+    --box-shadow-violet: 0 0 20px 9px #c49fe9;
+    --box-shadow-white: 0 0 20px 3px white;
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:var(--secundary-color-violet);
+    font-family: Poppins,sans-serif;
+    height: 100%;
+    line-height : 30px;
+    color: var(--white);
+    display: grid;
+    overflow-y: scroll;
+}
+main{
+    max-width: 90%;
+    justify-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* -------------------------- header ------------------------- */
+header{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.container-perfile{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+
+/* ----------------- Opciones de menu ------------------------ */
+.conteiner-menu{
+    margin: 0;
+    text-align: center;
+    display: flex;
+    min-width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 0.2px solid var(--secundary-color-violet);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background: rgba(27, 19, 55, 0.7);
+    box-shadow: 0 0 20px 15px var(--primary-color-violet);
+    backdrop-filter: blur(60px);
+    padding: 1rem;
+}
+.home{
+    background: var(--secundary-color-violet);
+    border-radius: 50%;
+    width: 50px;
+    border-radius: 15px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color-violet);
+}
+.home:hover{
+    transition: all 1.5s;
+    background:var(--primary-color-violet);
+    color:var(--white);
+    border:2px solid var(--secundary-color-violet);
+}
+.home .opcion img{
+    height: 27px;
+}
+.opcion{
+    text-decoration:none;
+    font-size: var(--s-font-size);
+    color: var(--secundary-color-violet);
+    margin: 1rem;
+}
+
+.descargar-cv i{
+    margin-left: 8px;
+}
+#cv{
+    display: flex;
+    width: 210px;
+    background: var(--secundary-color-violet);
+    text-decoration: none;
+    color: var(--primary-color-violet);
+    border-radius: 15px;
+    height: 46px;
+    align-items: center;
+    justify-content: center;
+}
+#cv:hover{
+    background:var(--primary-color-violet);
+    color:var(--white);
+    border:2px solid var(--secundary-color-violet);
+    transition: all 1.5s;
+}
+/* ======================= Bton de descarga de cv RESPONSIVE */
+.descargar-cv-responsive i{
+    margin-left: 8px;
+    display: none;
+}
+#cv-responsive{
+    display: flex;
+    text-decoration: none;
+    border-radius: 15px;
+    height: 4rem;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-color-violet);
+    justify-content: center;
+    color: var(--secundary-color-violet);
+    margin: 3rem;
+    width: 15rem;
+}
+
+/* ======================== perfile ============================ */
+
+.container-perfile .profile img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    min-height: calc(100% / 6);
+    box-shadow:  0 0 50px -15px var(--secundary-color-violet);
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--white);
+    align-items: center;
+    padding: 40px;
+    margin: 170px 0 100px ;
+    max-width: 50%;
+    background-color: var(--primary-color-violet);
+    box-shadow: 0 0 30px 15px var(--otro-color-violet);
+    text-align: center;
+}
+.animation-profile{
+    animation: 2s opacidad 0.5s ease-in-out forwards;
+}
+@keyframes opacidad {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.profile:hover{
+    transition: all 2.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+    transform: scale(1.09);
+}
+
+.skils{
+    text-align: center;
+    background:rgba(27, 19, 55, 0.2);
+    height: 150px;
+    padding: 0;
+    height: auto;
+    padding: 20px;
+    width: 90%;
+    max-width: calc(100vw - 40px);
+    border-radius: 25px;
+    margin-top: 30px;
+}
+.skils:hover{
+    box-shadow: 0 0 15px 5px var(--otro-color-violet);
+}
+.skils i{
+    font-size: 50px;
+    margin: 10px;
+}
+.container-perfile div h1{
+    font-size: xxx-large;
+    line-height: normal;
+    color: var(--secundary-color-violet);
+
+}
+.container-perfile div h2{
+    margin: 0;
+    padding-bottom: 30px;
+    color: var(--secundary-color-violet);
+}
+/* ============================= Section Sobre Mi =========================== */
+
+.subtitulo {
+    text-transform: uppercase;
+    font-size: 80px;
+    color: var(--primary-color-violet);
+}
+
+.texto{
+    letter-spacing: 0.5px;
+    font-size: var(--m-font-size);
+    text-align: justify;
+}
+
+/* ============== Acerca de mi ========================= */
+
+.acerca-de-mi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.acerca-de-mi div{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.descargar-cv-responsive{
+    display: none;
+}
+
+/* Animaciones  */
+@media (min-width: 760px) {
+    .skill-set .skill-set_list:hover {
+      box-shadow: 0 0 20px aliceblue;
+    }
+  }
+  .animatedY {
+    animation: 2s apariciony 0s ease-in-out forwards;
+  }
+  @keyframes apariciony {
+    0% {
+      transform: translateY(200px);
+    }
+    35% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  
+  .animatedX {
+    animation: 2s aparicionx 0s ease-in-out forwards;
+  }
+  @keyframes aparicionx {
+    0% {
+      opacity: 0;
+      transform: translateX(-200px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+

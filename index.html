@@ -8,13 +8,14 @@
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="estudios.css">
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="formulario.css">
-    <link rel="stylesheet" href="proyectos.css">
-    <link rel="stylesheet" href="responsive.css">
-    <link rel="stylesheet" href="habilidades.css">    
+    <!-- lins de css -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/estudios.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/formulario.css">
+    <link rel="stylesheet" href="./styles/proyectos.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+    <link rel="stylesheet" href="./styles/habilidades.css">    
     <!-- Primary Meta Tags -->
     <title>Florencia Gironi - Portafolio Frontend Developer</title>
     <meta name="title" content="Florencia Gironi - Portafolio Frontend Developer">
@@ -22,18 +23,19 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:url" content="https://florgironi.github.io/Mi-pagina-Web/">
     <meta property="og:title" content="Florencia Gironi - Portafolio Frontend Developer">
     <meta property="og:description" content="Mi objetivo es trabajar en el mundo de la tecnologia y aportar valor añadido con todos mis conociemientos derivados del hambito del desarrollo.">
     <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://metatags.io/">
+    <meta property="twitter:url" content="https://florgironi.github.io/Mi-pagina-Web/">
     <meta property="twitter:title" content="Florencia Gironi - Portafolio Frontend Developer">
     <meta property="twitter:description" content="Mi objetivo es trabajar en el mundo de la tecnologia y aportar valor añadido con todos mis conociemientos derivados del hambito del desarrollo.">
     <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
-
+    <script src="./scripts/index.js"> 
+    </script>
 </head>
 
 <body>
@@ -127,64 +129,77 @@
         <h2 class="subtitulo">
             Estudios
         </h2>
-        <!-- <p class="texto">
+        <p class="texto">
             Considero que el aprendizaje abre puertas, ilumina posibilidades, contruye caminos y por eso es invierto
             gran parte de mi tiempo y dinero en capacitaciones para capitalizar mejores estandares profesionales.Mi
             objetivo es trabajar en el mundo de la tecnologia y aportar valor añadido con todos mis conociemientos
             derivados de todos los hambitos donde me capacite.
-        </p> -->
+        </p>
         <div class="envoltorio-tarjetas">
             <div class="tarjeta animatedX">
-                <img class="imagen-superior-tarjeta" src="./assets/LogoPlatzi.png" alt="platzi">
-                <h3> Frontend </h3>
-                <span class="descripcion-tarjetas"> Desde el 2021 </span>
-                <p class="descripcion-tarjetas">Desarrolle conocimientos en:</p>
-                <div class="envolorio-iconos">
-                    <i class="devicon-javascript-plain colored"></i>
-                    <i class="devicon-html5-plain colored"></i>
-                    <i class="devicon-css3-plain colored"></i>
-                    <i class="devicon-nodejs-plain colored"></i>
-                    <i class="devicon-react-original colored"></i>
+                <div class="tarjeta-visible">
+                    <img class="imagen-superior-tarjeta" src="./assets/LogoPlatzi-min.png" alt="platzi">
+                    <h3> Frontend Developer </h3>
                 </div>
+                <div onclick="despliegueTarjeta()" id="descripcion-estudios">
+                    <span > Desde el 2021 </span>
+                    <p>Desarrolle conocimientos en:</p>
+                    <div class="envolorio-iconos">
+                        <i class="devicon-javascript-plain colored"></i>
+                        <i class="devicon-html5-plain colored"></i>
+                        <i class="devicon-css3-plain colored"></i>
+                        <i class="devicon-nodejs-plain colored"></i>
+                        <i class="devicon-react-original colored"></i>
+                    </div>
+                </div>    
             </div>
             <div class="tarjeta animatedY">
-                <img class="imagen-superior-tarjeta" src="./assets/LogoUdemy.png" alt="platzi">
-                <h3> FullStack </h3>
-                <span class="descripcion-tarjetas"> 2022 </span>
-                <p class="descripcion-tarjetas">Desarrolle conocimientos en:</p>
-                <div class="envolorio-iconos">
-                    <i class="devicon-javascript-plain colored"></i>
-                    <i class="devicon-html5-plain colored"></i>
-                    <i class="devicon-css3-plain colored"></i>
-                    <i class="devicon-nodejs-plain colored"></i>
-                    <img class="icono" src="./assets/database-storage.png" alt="">
+                <div class="tarjeta-visible">
+                    <img class="imagen-superior-tarjeta" src="./assets/LogoUdemy-min.png" alt="platzi">
+                    <h3> FullStack </h3>   
+                </div>
+                <div onclick="despliegueTarjeta()" id="descripcion-estudios">
+                    <span> 2022 </span>
+                    <p >Desarrolle conocimientos en:</p>
+                    <div class="envolorio-iconos">
+                        <i class="devicon-javascript-plain colored"></i>
+                        <i class="devicon-html5-plain colored"></i>
+                        <i class="devicon-css3-plain colored"></i>
+                        <i class="devicon-nodejs-plain colored"></i>
+                        <img class="icono" src="./assets/database-storage.png" alt="database">
+                    </div>
                 </div>
             </div>
             <div class="tarjeta animatedX">
-                <img class="imagen-superior-tarjeta" src="./assets/LogoUtn.png" alt="Utn">
-                <h3> Ingenieria Electronica </h3>
-                <span class="descripcion-tarjetas"> 2016 - 2020 </span>
-                <p class="descripcion-tarjetas">Desarrolle habilidades en:</p>
-                <div >
-                <p class="descripcion-tarjetas"> 👉🏽 Pensamiento logico </p>
-                <p class="descripcion-tarjetas"> 👉🏽 Mejora del proceso y conocimientos en harware </p>
-                <p class="descripcion-tarjetas"> 👉🏽 Programacion de bajo nivel </p>
+                <div class="tarjeta-visible">
+                    <img class="imagen-superior-tarjeta" src="./assets/LogoUtn-min.png" alt="Utn">
+                    <h3> Ingenieria Electronica </h3>
+                </div>
+                <div onclick="despliegueTarjeta()" id="descripcion-estudios">
+                    <span> 2016 - 2020 </span>
+                    <p>Desarrolle habilidades en:</p>
+                    <p> 👉🏽 Pensamiento logico </p>
+                    <p> 👉🏽 Mejora del proceso y conocimientos en harware </p>
+                    <p> 👉🏽 Programacion de bajo nivel </p>
                 </div>
             </div>
             <div class="tarjeta animatedY">
-                <div class="envoltorio-logo-estudio">
-                    <img class="imagen-superior-tarjeta" src="./assets/logoEcoa.png" alt="Ecoa">
+                <div class="tarjeta-visible">
+                    <img class="imagen-superior-tarjeta" src="./assets/logoEcoa-min.png" alt="Ecoa">
+                    <h3> Coach Organizacional y Ejecutivo </h3>
                 </div>
-                <h3> Coach Organizacional y Ejecutivo </h3>
-                <span class="descripcion-tarjetas"> 2019 - 2022 </span>
-                <p class="descripcion-tarjetas">Desarrolle habilidades en:</p>
-                <div >
-                <p class="descripcion-tarjetas"> 👉🏽 Gestion emocional </p>
-                <p class="descripcion-tarjetas"> 👉🏽 Liderazgo y comunicacion asertiva </p>
-                <p class="descripcion-tarjetas"> 👉🏽 Trabajo en equipo </p>
+                <div onclick="despliegueTarjeta()" id="descripcion-estudios">
+                    <span> 2019 - 2022 </span>
+                    <p>Desarrolle habilidades en:</p>
+                    <div >
+                    <p> 👉🏽 Gestion emocional </p>
+                    <p> 👉🏽 Liderazgo y comunicacion asertiva </p>
+                    <p> 👉🏽 Trabajo en equipo </p>
+                    </div>
                 </div>
             </div>
         </div>
+        
     </section>
 
     <section class="proyectos">
@@ -204,27 +219,24 @@
         <div class="envoltorio-proyectos">       
             <div class="tarjeta-proyecto">
                 <div class="wraper-image-proyecto">
-                    <img class="imagen-superior-tarjeta" src="./assets/Michipones1.png" alt="Utn"> 
-                    <div class="wraper-flechas">
-                        <i class="fa-solid fa-chevron-left"></i>
-                        <i class="fa-solid fa-chevron-right"></i>  
-                    </div>
-                    
+                    <img class="imagen-superior-tarjeta" src="./assets/Michipones1-min.png" alt="Utn"> 
+                    <a class="ancla-proyecto" href="#">
+                        <h3> Michipones </h3>
+                    </a>
                 </div>
-                <a class="ancla-proyecto" href="#">
-                    <h3> Michipones </h3>
-                </a>
-                <div class="envolorio-iconos">
-                <img class="icono" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />
-                <img class="icono" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
-                <img class="icono" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-                <img class="icono" class="icono" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" />
+            
+                <div class="envolorio-iconos-proyectos">
+                    <i class="devicon-javascript-plain colored"></i>
+                    <i class="devicon-html5-plain colored"></i>
+                    <i class="devicon-css3-plain colored"></i>
+                    <i class="devicon-nodejs-plain colored"></i>
                 </div>
                 <p class="descripcion-tarjetas-proyectos">Desarrolle este proyeco con el objetivo de aprender los lenguajes de HTML, CSS, JavaScrip y NodeJs. Es un trabajo propuesto por la academia de Platzi, lo cual lo hice por mi cuenta y le puse mi estilo. Lo que mas aprendi fue conectar el Frontend con el backend. </p>
                 <p class="descripcion-tarjetas-proyectos"> Lo mas importante de este proyecto para mi es haberme dado cuenta que me queria interizar en los temas que no manejaba muy bien como por ejemplo NodeJs. Por lo que arraque un curso del mismo para profundizar y que no sea mas un problema.</p>
                 </div>   
         </div>
     </section>
+
     <form class="form">
         <h2 class="subtitulo-form">Dejame tu contacto</h2>
         <p class="p-form" type="Nombre:"><input placeholder="Escribi tu nombre aqui..."></input></p>
