@@ -18,7 +18,7 @@
     align-items: center;
     border-radius: 25px;
     overflow: auto;
-    padding: 1rem;
+    padding: 2rem;
     background: var(--tarjeta-color-violet);
     width: 15rem;
 }
