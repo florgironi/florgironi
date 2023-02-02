@@ -236,5 +236,40 @@ header{
     display: none;
 }
 
+/* Animaciones  */
+@media (min-width: 760px) {
+    .skill-set .skill-set_list:hover {
+      box-shadow: 0 0 20px aliceblue;
+    }
+  }
+  .animatedY {
+    animation: 2s apariciony 0s ease-in-out forwards;
+  }
+  @keyframes apariciony {
+    0% {
+      transform: translateY(200px);
+    }
+    35% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  
+  .animatedX {
+    animation: 2s aparicionx 0s ease-in-out forwards;
+  }
+  @keyframes aparicionx {
+    0% {
+      opacity: 0;
+      transform: translateX(-200px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
 
 
