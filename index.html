@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="estudios.css">
     <link rel="stylesheet" href="footer.css">
@@ -17,18 +20,15 @@
 </head>
 
 <body>
-    <header>
-        <div class="container-cabecera">
-                <img src="./assets/profile.jpeg" alt="florgironi">
-                <div>
-                 <h1> FLORENCIA <br> GIRONI</h1>
-                <h2> Frontend developer</h2>   
-                </div>
-                
-            </a>
-        </div>
+<header>
         <nav class="conteiner-menu">
-            <a class="opcion" href="">
+            <a class="opcion" href="#">
+            <div class="home">
+                <i class="fi fi-rr-home"></i>
+            </div>
+            </a>  
+            <div>
+             <a class="opcion" href="">
                 Sobre Mi
             </a>
             <a class="opcion" href="">
@@ -39,14 +39,40 @@
             </a>
             <a class="opcion" href="">
                 Contacto
-            </a>
+            </a>   
+            </div>
+            <div class="descargar-cv">
+                <a id="cv" download="florenciagironiCV" href="https://drive.google.com/file/d/1S77yKWS8jiAch2bWObnz2FgyOyxpcod_/view?usp=sharing" target="_blank"> Descargar CV 
+                    <i class="fi fi-br-download"></i>
+                </a>
+            </div>
         </nav>
-    </header>
-    <main>
-        <section class="acerca-de-mi">
-            <h2 class="subtitulo">
-                Quien soy?
-            </h2>
+        <div class="container-perfile">
+            <div class="profile animation-profile">
+                <img src="./assets/profile.jpeg" alt="florgironi">
+                 <h1> FLORENCIA GIRONI</h1>
+                <h2> Frontend developer</h2>    
+                </div>  
+                <div class="skils">
+                    <h3> SKILS </h3> 
+                    <div class="envoltorio-iconos-skils">
+                        <i class="devicon-javascript-plain colored"></i>
+                        <i class="devicon-html5-plain colored"></i>
+                        <i class="devicon-css3-plain colored"></i>
+                        <i class="devicon-nodejs-plain colored"></i>
+                        <i class="devicon-canva-original colored"></i>
+                        <i class="devicon-git-plain colored"></i>
+                        <i class="devicon-github-original colored"></i>    
+                        <i class="devicon-mongodb-plain-wordmark colored"></i>
+                    </div>  
+            </div>
+        </div> 
+</header>
+<main>
+    <section class="acerca-de-mi">
+        <h2 class="subtitulo">
+            Quien soy?
+        </h2>
             <p class="texto">
                 Hola mi nombre es Florencia Gironi, soy de Argentina En estos ultimos años mi vida tomo un nuevo rumbo,
                 despues de estudiar cuatro años Ing Elentronica la deje para hacer la carrera de Coach Ontologico (y la
@@ -56,190 +82,134 @@
                 ser parte del otro mundo de la tecnologia. Pase del Harware al Sofware y estuvo genial, descubri el
                 trabajo remoto y todos los valores que viven en este hambito.
             </p>
-            <p class="texto">
-                Decidi especializarme en Frontend Developer (y aun sigo estudiando). Mas a largo plazo proyecto ser
-                Product Manager por que me encantaria juntar todas mis habilidades en un solo trabajo.
-            </p>
-            <p class="texto">
-                Me apasiona el desarrollo personal, por eso, como Coach Ontologica me entrene y desarrolle habilidades
-                para el abordaje emocional, corporal y linguistico.
-                He liderado proyectos con trabajo de equipos responsablemente obteniendo resultados increibles. Me
-                encanta ver como las personas pueden alcanzar niveles profesionales y personales que nunca habían
-                pensado.
-            </p>
-            <p class="texto">
-                Mi compromiso como profesional es asistir a individuos, equipos y organizaciones para superar sus
-                niveles de desempeño y enfocar sus conversaciones y acciones hacia nuevas posibilidades.
-            </p>
-            <a id="cv" download="florenciagironiCV" href="https://drive.google.com/file/d/1S77yKWS8jiAch2bWObnz2FgyOyxpcod_/view?usp=sharing" target="_blank"> Descargar CV 
-                <!-- icono -->
-            </a>
-        </section>
-
-        <section class="estidios">
-            <h2 class="subtitulo">
-                Estudios
-            </h2>
-            <p class="texto">
-                Considero que el aprendizaje abre puertas, ilumina posibilidades, contruye caminos y por eso es invierto
-                gran parte de mi tiempo y dinero en capacitaciones para capitalizar mejores estandares profesionales.Mi
-                objetivo es trabajar en el mundo de la tecnologia y aportar valor añadido con todos mis conociemientos
-                derivados de todos los hambitos donde me capacite.
-            </p>
-
-            <div class="envoltorio-tarjetas">
-                <div class="tarjeta">
-                    <img class="imagen-superior-tarjeta" src="./assets/LogoPlatzi.png" alt="platzi">
-                    <h3> Frontend </h3>
-                    <span class="descripcion-tarjetas"> Desde el 2021 </span>
-                    <p class="descripcion-tarjetas">Desarrolle conocimientos en:</p>
-                    <div class="envolorio-iconos">
-                    <img class="icono" src="./assets/css-3.png" alt="css"> 
-                    <img class="icono" src="./assets/html-5.png" alt="">
-                    <img class="icono" src="./assets/js.png" alt="">
-                    <img class="icono" src="./assets/react.png" alt="">
-                    <img class="icono" src="./assets/nodejs.png" alt="">
-                    </div>
-                </div>
-
-                <div class="tarjeta">
-                    <img class="imagen-superior-tarjeta" src="./assets/LogoUdemy.png" alt="platzi">
-                    <h3> FullStack </h3>
-                    <span class="descripcion-tarjetas"> 2022 </span>
-                    <p class="descripcion-tarjetas">Desarrolle conocimientos en:</p>
-                    <div class="envolorio-iconos">
-                    <img class="icono" src="./assets/css-3.png" alt="css"> 
-                    <img class="icono" src="./assets/html-5.png" alt="">
-                    <img class="icono" src="./assets/js.png" alt="">
-                    <img class="icono" src="./assets/nodejs.png" alt="">
-                    <img class="icono" src="./assets/database-storage.png" alt="">
-                    </div>
-                </div>
-                <div class="tarjeta">
-                    <img class="imagen-superior-tarjeta" src="./assets/LogoUtn.png" alt="Utn">
-                    <h3> Ingenieria Electronica </h3>
-                    <span class="descripcion-tarjetas"> 2016 - 2020 </span>
-                    <p class="descripcion-tarjetas">Desarrolle habilidades en:</p>
-                    <div >
-                    <p class="descripcion-tarjetas"> 👉🏽 Pensamiento logico </p>
-                    <p class="descripcion-tarjetas"> 👉🏽 Mejora del proceso y conocimientos en harware </p>
-                    <p class="descripcion-tarjetas"> 👉🏽 Programacion de bajo nivel </p>
-                    </div>
-                </div>
-                <div class="tarjeta">
-                    <div class="envoltorio-logo-estudio">
-                        <img class="imagen-superior-tarjeta" src="./assets/logoEcoa.png" alt="Ecoa">
-                    </div>
-                    <h3> Coach Organizacional y Ejecutivo </h3>
-                    <span class="descripcion-tarjetas"> 2019 - 2022 </span>
-                    <p class="descripcion-tarjetas">Desarrolle habilidades en:</p>
-                    <div >
-                    <p class="descripcion-tarjetas"> 👉🏽 Gestion emocional </p>
-                    <p class="descripcion-tarjetas"> 👉🏽 Liderazgo y comunicacion asertiva </p>
-                    <p class="descripcion-tarjetas"> 👉🏽 Trabajo en equipo </p>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-        <section class="proyectos">
-            <h2 class="subtitulo">
-                Proyectos
-            </h2>
-            <p class="texto">
-                
-                Objetivo del proyecto
-                Cuanto me llevo hacerlo
-                Con que lenguajes lo hice
-                Que aprendi
-                que fue lo que mas me costo?
-                Modelo de negocio
-                En que se diferencia con el resto
-                Para que tipo de gente esta dirigido
-
-            </p>
-
-            <div class="envoltorio-proyectos">
-                
-                <div class="tarjeta-proyecto">
-                    <div class="wraper-image-proyecto">
-                        <img class="imagen-superior-tarjeta" src="./assets/Michipones1.png" alt="Utn"> 
-                        <div class="wraper-flechas">
-                            <i class="fa-solid fa-chevron-left"></i>
-                            <i class="fa-solid fa-chevron-right"></i>  
-                        </div>
-                        
-                    </div>
-                    <a class="ancla-proyecto" href="#">
-                        <h3> Michipones </h3>
-                    </a>
-                    
-                    
-                    <div class="envolorio-iconos">
-
-                    <img class="icono" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />
-                    <img class="icono" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
-                    <img class="icono" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-                    <img class="icono" class="icono" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" />
+        <p class="texto">
+            Decidi especializarme en Frontend Developer (y aun sigo estudiando). Mas a largo plazo proyecto ser
+            Product Manager por que me encantaria juntar todas mis habilidades en un solo trabajo.
+        </p>
+        <p class="texto">
+            Me apasiona el desarrollo personal, por eso, como Coach Ontologica me entrene y desarrolle habilidades
+            para el abordaje emocional, corporal y linguistico.
+            He liderado proyectos con trabajo de equipos responsablemente obteniendo resultados increibles. Me
+            encanta ver como las personas pueden alcanzar niveles profesionales y personales que nunca habían
+            pensado.
+        </p>
+        <!-- <p class="texto">
+            Mi compromiso como profesional es asistir a individuos, equipos y organizaciones para superar sus
+            niveles de desempeño y enfocar sus conversaciones y acciones hacia nuevas posibilidades.
+        </p> -->
         
+    </section>
+
+    <section class="estudios">
+        <h2 class="subtitulo">
+            Estudios
+        </h2>
+        <!-- <p class="texto">
+            Considero que el aprendizaje abre puertas, ilumina posibilidades, contruye caminos y por eso es invierto
+            gran parte de mi tiempo y dinero en capacitaciones para capitalizar mejores estandares profesionales.Mi
+            objetivo es trabajar en el mundo de la tecnologia y aportar valor añadido con todos mis conociemientos
+            derivados de todos los hambitos donde me capacite.
+        </p> -->
+        <div class="envoltorio-tarjetas">
+            <div class="tarjeta">
+                <img class="imagen-superior-tarjeta" src="./assets/LogoPlatzi.png" alt="platzi">
+                <h3> Frontend </h3>
+                <span class="descripcion-tarjetas"> Desde el 2021 </span>
+                <p class="descripcion-tarjetas">Desarrolle conocimientos en:</p>
+                <div class="envolorio-iconos">
+                <img class="icono" src="./assets/css-3.png" alt="css"> 
+                <img class="icono" src="./assets/html-5.png" alt="">
+                <img class="icono" src="./assets/js.png" alt="">
+                <img class="icono" src="./assets/react.png" alt="">
+                <img class="icono" src="./assets/nodejs.png" alt="">
+                </div>
+            </div>
+            <div class="tarjeta">
+                <img class="imagen-superior-tarjeta" src="./assets/LogoUdemy.png" alt="platzi">
+                <h3> FullStack </h3>
+                <span class="descripcion-tarjetas"> 2022 </span>
+                <p class="descripcion-tarjetas">Desarrolle conocimientos en:</p>
+                <div class="envolorio-iconos">
+                <img class="icono" src="./assets/css-3.png" alt="css"> 
+                <img class="icono" src="./assets/html-5.png" alt="">
+                <img class="icono" src="./assets/js.png" alt="">
+                <img class="icono" src="./assets/nodejs.png" alt="">
+                <img class="icono" src="./assets/database-storage.png" alt="">
+                </div>
+            </div>
+            <div class="tarjeta">
+                <img class="imagen-superior-tarjeta" src="./assets/LogoUtn.png" alt="Utn">
+                <h3> Ingenieria Electronica </h3>
+                <span class="descripcion-tarjetas"> 2016 - 2020 </span>
+                <p class="descripcion-tarjetas">Desarrolle habilidades en:</p>
+                <div >
+                <p class="descripcion-tarjetas"> 👉🏽 Pensamiento logico </p>
+                <p class="descripcion-tarjetas"> 👉🏽 Mejora del proceso y conocimientos en harware </p>
+                <p class="descripcion-tarjetas"> 👉🏽 Programacion de bajo nivel </p>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <div class="envoltorio-logo-estudio">
+                    <img class="imagen-superior-tarjeta" src="./assets/logoEcoa.png" alt="Ecoa">
+                </div>
+                <h3> Coach Organizacional y Ejecutivo </h3>
+                <span class="descripcion-tarjetas"> 2019 - 2022 </span>
+                <p class="descripcion-tarjetas">Desarrolle habilidades en:</p>
+                <div >
+                <p class="descripcion-tarjetas"> 👉🏽 Gestion emocional </p>
+                <p class="descripcion-tarjetas"> 👉🏽 Liderazgo y comunicacion asertiva </p>
+                <p class="descripcion-tarjetas"> 👉🏽 Trabajo en equipo </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="proyectos">
+        <h2 class="subtitulo">
+            Proyectos
+        </h2>
+        <!-- <p class="texto">
+            Objetivo del proyecto
+            Cuanto me llevo hacerlo
+            Con que lenguajes lo hice
+            Que aprendi
+            que fue lo que mas me costo?
+            Modelo de negocio
+            En que se diferencia con el resto
+            Para que tipo de gente esta dirigido
+        </p> -->
+        <div class="envoltorio-proyectos">       
+            <div class="tarjeta-proyecto">
+                <div class="wraper-image-proyecto">
+                    <img class="imagen-superior-tarjeta" src="./assets/Michipones1.png" alt="Utn"> 
+                    <div class="wraper-flechas">
+                        <i class="fa-solid fa-chevron-left"></i>
+                        <i class="fa-solid fa-chevron-right"></i>  
                     </div>
-                    <p class="descripcion-tarjetas">Desarrolle este proyeco con el objetivo de aprender los lenguajes de HTML, CSS, JavaScrip y NodeJs. Es un trabajo propuesto por la academia de Platzi, lo cual lo hice por mi cuenta y le puse mi estilo. Lo que mas aprendi fue conectar el Frontend con el backend. </p>
-                    <p class="descripcion-tarjetas"> Lo mas importante de este proyecto para mi es haberme dado cuenta que me queria interizar en los temas que no manejaba muy bien como por ejemplo NodeJs. Por lo que arraque un curso del mismo para profundizar y que no sea mas un problema.</p>
-                    </div>   
-                   
-                
-            </div>
-
-        </section>
-
-        <section>
-            <h2 class="subtitulo">
-                Inspiracion
-            </h2>
-            <p class="texto">
-                
-            </p>
-        </section>
-
-        <section class="section-habilidades">
-             <h2 class="subtitulo">
-                Orientación profesional y Habilidades 
-            </h2>
-            <div class="envoltorio-habilidades">
-                <div class="wraper-habilidades-left">
-                    <div class=""></div>
+                    
                 </div>
-
-                <div class="wraper-habilidades-right">
-
+                <a class="ancla-proyecto" href="#">
+                    <h3> Michipones </h3>
+                </a>
+                <div class="envolorio-iconos">
+                <img class="icono" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />
+                <img class="icono" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
+                <img class="icono" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                <img class="icono" class="icono" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" />
                 </div>
-
-
-
-
-
-
-
-
-
-
-            <p class="texto">
-            </p>   
-            </div>
-            
-        </section>
-
-        <section>
-            <form class="form">
-                <h2 class="subtitulo-form">Dejame tu contacto</h2>
-                <p class="p-form" type="Nombre:"><input placeholder="Escribi tu nombre aqui..."></input></p>
-                <p class="p-form" type="Email:"><input placeholder="Donde puedo contactarlo..."></input></p>
-                <p class="p-form" type="Mensaje:"><input placeholder="Como puedo ayudarte?..."></input></p>
-                <button>Enviar Mensaje</button>
-            </form>
-        </section>
-    </main>
+                <p class="descripcion-tarjetas-proyectos">Desarrolle este proyeco con el objetivo de aprender los lenguajes de HTML, CSS, JavaScrip y NodeJs. Es un trabajo propuesto por la academia de Platzi, lo cual lo hice por mi cuenta y le puse mi estilo. Lo que mas aprendi fue conectar el Frontend con el backend. </p>
+                <p class="descripcion-tarjetas-proyectos"> Lo mas importante de este proyecto para mi es haberme dado cuenta que me queria interizar en los temas que no manejaba muy bien como por ejemplo NodeJs. Por lo que arraque un curso del mismo para profundizar y que no sea mas un problema.</p>
+                </div>   
+        </div>
+    </section>
+    <form class="form">
+        <h2 class="subtitulo-form">Dejame tu contacto</h2>
+        <p class="p-form" type="Nombre:"><input placeholder="Escribi tu nombre aqui..."></input></p>
+        <p class="p-form" type="Email:"><input placeholder="Donde puedo contactarlo..."></input></p>
+        <p class="p-form" type="Mensaje:"><input placeholder="Como puedo ayudarte?..."></input></p>
+        <button>Enviar Mensaje</button>
+    </form>
+</main>
 
 <footer>
     <section class="contacto">

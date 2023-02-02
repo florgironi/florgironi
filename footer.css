@@ -1,15 +1,17 @@
 footer{
-    background-image: url("./assets/Footer.png");
     background-size: cover;
     background-position: center;
+    background: rgba(27, 19, 55, 0.7);
     height: 100%;
-    color: #ffffff;
+    color: var(--white);
     padding: 0.5rem 3rem;
+    box-shadow: 0 0 20px 9px var(--primary-color-violet);
 }
 .envoltorio-footer{
     display: flex;
     align-items:center;
     min-height: calc(100% / 6);
+
 }
 ul{
     display: inline-flex;
@@ -24,6 +26,7 @@ ul{
 .tarjeta-contacto:hover{
     cursor: pointer;
     transform: scale(1.10);
+    transition: all 1.5s;
 }
 .icono-footer{
     height: 30px;

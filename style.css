@@ -1,31 +1,40 @@
 :root{
     --white:white;
-    --strong-violet:#1b1337;
     --xl-font-size:30px;
     --m-font-size:25px;
     --s-font-size:20px;
     --line-height:30px;
     --color-text-gray:hsl(0, 0%, 28%);
-    --color-violet-light:#c49fe9;
+    --primary-color-violet:#1b1337;
+    --secundary-color-violet:#c49fe9;
+    --tercery-color-background:#605685;
+    --otro-color-violet:#483659;
+    --tarjeta-color-violet:rgba(27, 19, 55, 0.3);
+    --tarjeta-color-blanca:rgba(255, 255, 255, 0.4);
+    --background-gradient:linear-gradient(187deg, rgba(28,21,55,1) 38%, rgba(196,159,233,1) 92%, rgba(196,159,233,1) 93%);
+    --box-shadow-black: 0 0 50px -15px #000;
+    --box-shadow-violet: 0 0 20px 9px #c49fe9;
+    --box-shadow-white: 0 0 20px 3px white;
+
 }
 
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: var(--white);
+    background-color:var(--secundary-color-violet);
     font-family: Poppins,sans-serif;
     height: 100%;
     line-height : 30px;
-    color: var(--color-text-gray);
+    color: var(--white);
     display: grid;
+    overflow-y: scroll;
 }
 main{
     max-width: 90%;
     justify-self: center;
     margin-left: auto;
     margin-right: auto;
-
 }
 /* -------------------------- header ------------------------- */
 header{
@@ -34,60 +43,154 @@ header{
     align-items: center;
     flex-direction: column;
 }
-.container-cabecera{
+.container-perfile{
     display: flex;
-    width: 100%;
     justify-content: space-evenly;
-    padding: 50px;
-    background: linear-gradient(187deg, rgba(28,21,55,1) 38%, rgba(196,159,233,1) 92%, rgba(196,159,233,1) 93%);
-}
-
-.container-cabecera img{
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    min-height: calc(100% / 6);
-}
-.container-cabecera div{
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    color: var(--white);
-}
-.container-cabecera div h1{
-    font-size: xxx-large;
-    line-height: normal;
-}
-.container-cabecera div h2{
-    margin: 0;
-    border-bottom: 2px solid var(--white);
-    padding-bottom: 30px;
+    align-items: center;
+    width: 100vw;
 }
 
 /* ----------------- Opciones de menu ------------------------ */
 .conteiner-menu{
     margin: 0;
-    padding: 20px 15px;
+    padding: 20px 0 0;
     text-align: center;
-    background-color: var(--color-violet-light);
-    width: 100%;
-    border-bottom: 2px solid rgba(196, 159, 233, .8);
+    display: flex;
+    min-width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 0.2px solid var(--secundary-color-violet);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background: rgba(27, 19, 55, 0.7);
+    box-shadow: 0 0 20px 15px var(--primary-color-violet);
+    
+    backdrop-filter: blur(60px);
+    padding: 13px;
 }
-
+.home{
+    background: var(--secundary-color-violet);
+    border-radius: 50%;
+    width: 50px;
+    border-radius: 15px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color-violet);
+}
+.home:hover{
+    transition: all 1.5s;
+    background:var(--primary-color-violet);
+    color:var(--white);
+    border:2px solid var(--secundary-color-violet);
+}
+.home .opcion img{
+    height: 27px;
+}
 .opcion{
     text-decoration:none;
-    font-size: var(--xl-font-size);
-    color: var(--strong-violet);
+    font-size: var(--s-font-size);
+    color: var(--secundary-color-violet);
     margin: 1rem;
 }
 
+.descargar-cv i{
+    margin-left: 8px;
+}
+#cv{
+    display: flex;
+    width: 210px;
+    background: var(--secundary-color-violet);
+    text-decoration: none;
+    color: var(--primary-color-violet);
+    border-radius: 15px;
+    height: 46px;
+    align-items: center;
+    justify-content: center;
+}
+#cv:hover{
+    background:var(--primary-color-violet);
+    color:var(--white);
+    border:2px solid var(--secundary-color-violet);
+    transition: all 1.5s;
+}
+
+/* ======================== perfile ============================ */
+
+.container-perfile .profile img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    min-height: calc(100% / 6);
+    box-shadow:  0 0 50px -15px var(--secundary-color-violet);
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--white);
+    align-items: center;
+    padding: 40px;
+    margin: 170px 0 100px ;
+    max-width: 50%;
+    background-color: var(--primary-color-violet);
+    box-shadow: 0 0 30px 15px var(--otro-color-violet);
+}
+.animation-profile{
+    animation: 2s opacidad 0.5s ease-in-out forwards;
+}
+@keyframes opacidad {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.profile:hover{
+    transition: all 2.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+    transform: scale(1.09);
+}
+
+.skils{
+    text-align: center;
+    background:rgba(27, 19, 55, 0.2);
+    height: 150px;
+    padding: 0;
+    height: auto;
+    padding: 20px;
+    width: 90%;
+    max-width: calc(100vw - 40px);
+    border-radius: 25px;
+    margin-top: 30px;
+}
+.skils:hover{
+    box-shadow: 0 0 15px 5px var(--otro-color-violet);
+}
+.skils i{
+    font-size: 50px;
+    margin: 10px;
+}
+.container-perfile div h1{
+    font-size: xxx-large;
+    line-height: normal;
+    color: var(--secundary-color-violet);
+
+}
+.container-perfile div h2{
+    margin: 0;
+    padding-bottom: 30px;
+    color: var(--secundary-color-violet);
+}
 /* ============================= Section Sobre Mi =========================== */
 
 .subtitulo {
-    color: var(--color-text-gray);
-    font-size: 1,5rem;
     text-transform: uppercase;
-    margin: 44px 0px 0px;
+    font-size: 80px;
+    color: var(--primary-color-violet);
 }
 
 .texto{
@@ -95,4 +198,20 @@ header{
     font-size: var(--m-font-size);
     text-align: justify;
 }
+
+/* ============== Acerca de mi ========================= */
+
+.acerca-de-mi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.acerca-de-mi div{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+
 

@@ -1,9 +1,14 @@
+.estudios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .envoltorio-tarjetas{
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     gap: 200px;
-    margin: 50px;
+    margin: 100px 0;
 }
 
 .tarjeta{
@@ -12,25 +17,25 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #1b1337;
-    box-shadow:0 0 40px -15px #000;
     border-radius: 25px;
     overflow: auto;
     padding: 10%;
+    background: var(--tarjeta-color-violet);
 
 }
 .tarjeta:hover{
     transform: scale(1.03);
-}
+    box-shadow: 0 0 20px 1px var(--primary-color-violet);
 
+}
 .imagen-superior-tarjeta{
     height: 100%;
     width: 100%;
     overflow: auto;
-    background-color: #ffffff;
+    background-color: var(--white);
 }
  .envoltorio-logo-estudio{
-     background-color: white;
+     background-color: var(--white);
  }
 
 .descripcion-tarjetas{
