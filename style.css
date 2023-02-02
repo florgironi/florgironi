@@ -117,6 +117,24 @@ header{
     border:2px solid var(--secundary-color-violet);
     transition: all 1.5s;
 }
+/* ======================= Bton de descarga de cv RESPONSIVE */
+.descargar-cv-responsive i{
+    margin-left: 8px;
+    display: none;
+}
+#cv-responsive{
+    display: flex;
+    text-decoration: none;
+    border-radius: 15px;
+    height: 4rem;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-color-violet);
+    justify-content: center;
+    color: var(--secundary-color-violet);
+    margin: 3rem;
+    width: 15rem;
+}
 
 /* ======================== perfile ============================ */
 
@@ -138,6 +156,7 @@ header{
     max-width: 50%;
     background-color: var(--primary-color-violet);
     box-shadow: 0 0 30px 15px var(--otro-color-violet);
+    text-align: center;
 }
 .animation-profile{
     animation: 2s opacidad 0.5s ease-in-out forwards;
@@ -211,6 +230,10 @@ header{
     display: flex;
     align-items: center;
     gap: 60px;
+}
+
+.descargar-cv-responsive{
+    display: none;
 }
 
 
