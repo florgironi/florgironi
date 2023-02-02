@@ -28,6 +28,10 @@ ul{
     transform: scale(1.10);
     transition: all 1.5s;
 }
+.tarjeta-contacto i{
+    font-size: 30px;
+    margin-right: 20px; 
+}
 .icono-footer{
     height: 30px;
     margin-right: 20px; 
