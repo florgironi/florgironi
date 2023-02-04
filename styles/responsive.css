@@ -8,6 +8,11 @@
         width: 100vw;
         max-width: 100%;
         padding: 3rem 0;
+        
+    }
+    .container-perfile .profile img {
+        width: 200px;
+        height: 200px
     }
     .subtitulo{
         font-size: 2rem;
@@ -24,6 +29,7 @@
     .envoltorio-tarjetas-proyecto{
         flex-direction: column;
         align-items: center;
+        margin: 0;
     }
     .tarjeta-proyecto{
         margin: 0;
