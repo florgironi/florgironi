@@ -8,6 +8,7 @@
     margin: 3rem;
     width: 90%;
     gap: 2rem;
+    justify-content: center;
 }
 .tarjeta-proyecto{
     height: auto;
