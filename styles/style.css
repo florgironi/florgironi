@@ -67,6 +67,7 @@ header{
     box-shadow: 0 0 20px 15px var(--primary-color-violet);
     backdrop-filter: blur(60px);
     padding: 1rem;
+    left: 0;
 }
 .home{
     background: var(--secundary-color-violet);
