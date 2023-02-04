@@ -11,9 +11,11 @@
 }
 .tarjeta-proyecto{
     height: auto;
+    width: 13rem;
     border-radius: 25px;
     overflow: auto;
     background: var(--tarjeta-color-violet);
+
 }
 .tarjeta-proyecto:hover{
     transform: scale(1.03);
