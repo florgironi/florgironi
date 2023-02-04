@@ -213,7 +213,8 @@ header{
 .texto{
     letter-spacing: 0.5px;
     font-size: var(--m-font-size);
-    text-align: justify;
+    text-align: left;
+    width: 100%;
 }
 
 /* ============== Acerca de mi ========================= */
