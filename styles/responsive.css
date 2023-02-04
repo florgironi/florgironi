@@ -1,4 +1,8 @@
 @media(max-width: 550px){
+    main{
+        width: 100vw;
+    }
+    
     .profile{
         margin: 0;
         width: 100vw;
@@ -13,6 +17,13 @@
         flex-direction: column;
         margin: 0;
         gap: 50px;
+    }
+    .tarjeta{
+        width: auto;
+    }
+    .envoltorio-tarjetas-proyecto{
+        flex-direction: column;
+        align-items: center;
     }
     .tarjeta-proyecto{
         margin: 0;
