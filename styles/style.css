@@ -135,7 +135,7 @@ header{
     transform: scale(1.09);
 }
 
-.skils{
+.skills{
     text-align: center;
     background:rgba(27, 19, 55, 0.2);
     height: 150px;
@@ -147,10 +147,10 @@ header{
     border-radius: 25px;
     margin-top: 30px;
 }
-.skils:hover{
+.skills:hover{
     box-shadow: 0 0 15px 5px var(--otro-color-violet);
 }
-.skils i{
+.skills i{
     font-size: 50px;
     margin: 10px;
 }
