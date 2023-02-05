@@ -158,6 +158,7 @@ header{
     font-size: xxx-large;
     line-height: normal;
     color: var(--secundary-color-violet);
+    margin-top: 3rem;
 
 }
 .container-perfile div h2{
