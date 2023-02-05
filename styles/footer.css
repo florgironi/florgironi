@@ -19,6 +19,9 @@ footer {
 	align-items: center;
 }
 
+.contacto h2{
+	font-size: xx-large;
+}
 ul {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
