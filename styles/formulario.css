@@ -40,7 +40,7 @@ input:focus{
     margin:28px 0 0;
     font-size:14px;
 }
-button{
+#bton-form{
     float:right;
     padding:8px 12px;
     margin:8px 0 0;
@@ -50,7 +50,7 @@ button{
     cursor:pointer;
     transition: all 1.5s;
 }
-button:hover{
+#bton-form:hover{
     background:var(--primary-color-violet);
     color:var(--white)
 }

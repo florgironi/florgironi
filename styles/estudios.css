@@ -20,6 +20,7 @@
     overflow: hidden;
     background: var(--tarjeta-color-violet);
     width: 15rem;
+    padding: 1rem;
 }
 .tarjeta:hover{
     transform: scale(1.03);

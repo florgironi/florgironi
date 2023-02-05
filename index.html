@@ -18,7 +18,9 @@
     <link rel="stylesheet" href="./styles/formulario.css">
     <link rel="stylesheet" href="./styles/proyectos.css">
     <link rel="stylesheet" href="./styles/responsive.css">
-    <link rel="stylesheet" href="./styles/habilidades.css">    
+    <link rel="stylesheet" href="./styles/habilidades.css"> 
+    <link rel="stylesheet" href="./styles/nav-responsive.css">   
+    <link rel="stylesheet" href="./styles/curriculum.css">
     <!-- Primary Meta Tags -->
 
     <!-- Open Graph / Facebook -->
@@ -40,84 +42,64 @@
 </head>
 
 <body>
+    
 <header>
-        <nav class="conteiner-menu">
-            <a class="opcion" href="./">
-            <div class="home">
-                <i class="fi fi-rr-home"></i>
-            </div>
-            </a>  
-            <div>
-             <a class="opcion" href="#sobre-mi">
-                Sobre Mi
+    <nav class="conteiner-menu">
+        <a class="opcion" href="./">
+        <div class="home">
+            <i class="fi fi-rr-home"></i>
+        </div>
+        </a>  
+        <div>
+            <a class="opcion" href="#sobre-mi">
+            Sobre Mi
+        </a>
+        
+        <a class="opcion" href="#proyectos">
+            Proyectos
+        </a>
+        <a class="opcion" href="#estudios">
+            Estudios
+        </a>
+        <a class="opcion" href="#contacto">
+            Contacto
+        </a>   
+        </div>
+        <div class="descargar-cv">
+            <a id="cv" download="florenciagironiCV" href="https://drive.google.com/file/d/1PMYH-9lFkXtKoaIe7cKWOZRCtAOARLOX/view?usp=sharing" target="_blank"> Descargar CV 
+                <i class="fi fi-br-download"></i>
             </a>
-            
-            <a class="opcion" href="#proyectos">
-                Proyectos
-            </a>
-            <a class="opcion" href="#estudios">
-                Estudios
-            </a>
-            <a class="opcion" href="#contacto">
-                Contacto
-            </a>   
-            </div>
-            <div class="descargar-cv">
-                <a id="cv" download="florenciagironiCV" href="https://drive.google.com/file/d/1PMYH-9lFkXtKoaIe7cKWOZRCtAOARLOX/view?usp=sharing" target="_blank"> Descargar CV 
+        </div>
+    </nav>
+
+    <section  id="perfile"  class="container-perfile">
+        <div class="profile animation-profile animatedX ">
+            <img src="./assets/profile.jpeg" alt="florgironi">
+                <h1> FLORENCIA GIRONI</h1>
+            <h2> Frontend developer</h2>    
+            </div>  
+            <div class="descargar-cv-responsive">
+                <a id="cv-responsive" download="florenciagironiCV" href="https://drive.google.com/file/d/1PMYH-9lFkXtKoaIe7cKWOZRCtAOARLOX/view?usp=sharing" target="_blank"> Descargar CV 
                     <i class="fi fi-br-download"></i>
                 </a>
             </div>
-        </nav>
-        <div class="dropdown dropdown-left">
-            <label tabindex="0" class="btn m-1">
-                <label class="btn btn-circle swap swap-rotate">
-  
-                    <!-- this hidden checkbox controls the state -->
-                    <input type="checkbox" />
-                    
-                    <!-- hamburger icon -->
-                    <svg class="swap-off fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"/></svg>
-                    
-                    <!-- close icon -->
-                    <svg class="swap-on fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"/></svg>
-                  </label>
-            </label>
-            <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
-                <li><a href="#sobre-mi"> Sobre Mi</a></li>
-                <li><a href="#proyectos"> Proyectos</a></li>
-                <li><a href="#estudios"> Estudios</a></li>
-                <li><a href="#contacto"> Contacto</a></li>
-                
-            </ul>
-            </div>
-        <div class="container-perfile">
-            <div class="profile animation-profile animatedX ">
-                <img src="./assets/profile.jpeg" alt="florgironi">
-                 <h1> FLORENCIA GIRONI</h1>
-                <h2> Frontend developer</h2>    
-                </div>  
-                <div class="descargar-cv-responsive">
-                    <a id="cv-responsive" download="florenciagironiCV" href="https://drive.google.com/file/d/1PMYH-9lFkXtKoaIe7cKWOZRCtAOARLOX/view?usp=sharing" target="_blank"> Descargar CV 
-                        <i class="fi fi-br-download"></i>
-                    </a>
-                </div>
-                <div class="skils animatedY">
-                    <h3> SKILLS </h3> 
-                    <div class="envoltorio-iconos-skils">
-                        <i class="devicon-javascript-plain colored"></i>
-                        <i class="devicon-html5-plain colored"></i>
-                        <i class="devicon-css3-plain colored"></i>
-                        <i class="devicon-nodejs-plain colored"></i>
-                        <i class="devicon-canva-original colored"></i>
-                        <i class="devicon-git-plain colored"></i>
-                        <i class="devicon-github-original colored"></i>    
-                        <i class="devicon-mongodb-plain-wordmark colored"></i>
-                    </div>  
-            </div>
-        </div> 
-        
+    </section>      
 </header>
 <main>
+    <section class="skils animatedY">
+        <h3 class="subtitulo"> SKILLS </h3> 
+        <div class="envoltorio-iconos-skils">
+            <i class="devicon-javascript-plain colored"></i>
+            <i class="devicon-html5-plain colored"></i>
+            <i class="devicon-css3-plain colored"></i>
+            <i class="devicon-nodejs-plain colored"></i>
+            <i class="devicon-canva-original colored"></i>
+            <i class="devicon-git-plain colored"></i>
+            <i class="devicon-github-original colored"></i>    
+            <i class="devicon-mongodb-plain-wordmark colored"></i>
+        </div>  
+    </section>
+
     <section id="sobre-mi" class="acerca-de-mi animatedX">
         <h2 class="subtitulo">
             Quien soy?
@@ -125,9 +107,9 @@
             <p class="texto">
                 👋🏽 Hola soy Florencia Gironi, Argentina y por ahora vivo en Cordoba, Capital.
                 <br>
-                Antes que nada Bienvenidos a mi pagina web donde muestro mi talento.
+                    Antes que nada Bienvenidos a mi pagina web donde muestro mi talento.
                 <br>
-                Soy programadora autodidacta. Me especialiso como Frontend Developer en Platzi.
+                    Soy programadora autodidacta. Me especialiso como Frontend Developer en Platzi.
             </p>
             <p class="texto">
                 💍 Mi compromiso como persona y como profesional es aportar valor en el mundo de la tecnologia con todos mis conocimientos, para eso cultivar relaciones importantes y verdaderas, tener impacto en la comunidad y poder llevar el espacio que me den a otro nivel.
@@ -202,7 +184,6 @@
     <!-- <p class="descripcion-tarjetas-proyectos">Desarrolle este proyeco con el objetivo de aprender los lenguajes de HTML, CSS, JavaScrip y NodeJs. Es un trabajo propuesto por la academia de Platzi, lo cual lo hice por mi cuenta y le puse mi estilo. Lo que mas aprendi fue conectar el Frontend con el backend. </p>
     <p class="descripcion-tarjetas-proyectos"> Lo mas importante de este proyecto para mi es haberme dado cuenta que me queria interizar en los temas que no manejaba muy bien como por ejemplo NodeJs. Por lo que arraque un curso del mismo para profundizar y que no sea mas un problema.</p> -->
     
-
     <section id="estudios" class="estudios">
         <h2 class="subtitulo">
             Estudios
@@ -291,7 +272,7 @@
 
 <footer>
     <section id="contacto" class="contacto">
-        <h2> CONTACTO </h2>
+        <h2 class="subtitulo"> CONTACTO </h2>
         <div class="envoltorio-footer">
                 <ul>
                 <li>
@@ -332,7 +313,7 @@
                         <img class="icono-footer" src="./assets/marcador-de-posicion.png" alt="Ubicacion" >
                         Cordoba, Argentina
                     </div>
-                </a>
+                    </a>
                 </li>
                 </ul>   
         </div>

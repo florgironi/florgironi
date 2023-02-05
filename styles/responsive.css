@@ -2,20 +2,16 @@
     main{
         width: 100vw;
     }
-    
     .profile{
         margin: 0;
         width: 100vw;
         max-width: 100%;
         padding: 3rem 0;
-        
+
     }
     .container-perfile .profile img {
         width: 200px;
         height: 200px
-    }
-    .dropdown{
-        display: block;
     }
     .subtitulo{
         font-size: 2rem;
@@ -51,6 +47,11 @@
     }
     footer{
         padding: 0;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        
     }
     
 }

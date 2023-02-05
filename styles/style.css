@@ -34,6 +34,9 @@ main{
     margin-left: auto;
     margin-right: auto;
     max-width: calc(100vw - 40px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 /* -------------------------- header ------------------------- */
 header{
@@ -92,54 +95,6 @@ header{
     font-size: var(--s-font-size);
     color: var(--secundary-color-violet);
     margin: 1rem;
-}
-
-/* ------------------------ NAV RESPONSIVE ---------------------  */
-
-.dropdown{
-    display: none;
-}
-
-
-/* ------------------------ CURRICULUM ---------------------  */
-
-.descargar-cv i{
-    margin-left: 8px;
-}
-#cv{
-    display: flex;
-    width: 210px;
-    background: var(--secundary-color-violet);
-    text-decoration: none;
-    color: var(--primary-color-violet);
-    border-radius: 15px;
-    height: 46px;
-    align-items: center;
-    justify-content: center;
-}
-#cv:hover{
-    background:var(--primary-color-violet);
-    color:var(--white);
-    border:2px solid var(--secundary-color-violet);
-    transition: all 1.5s;
-}
-/* ======================= Bton de descarga de cv RESPONSIVE ======================*/
-.descargar-cv-responsive i{
-    margin-left: 8px;
-    display: none;
-}
-#cv-responsive{
-    display: flex;
-    text-decoration: none;
-    border-radius: 15px;
-    height: 4rem;
-    align-items: center;
-    justify-content: center;
-    background: var(--primary-color-violet);
-    justify-content: center;
-    color: var(--secundary-color-violet);
-    margin: 3rem;
-    width: 15rem;
 }
 
 /* ======================== perfile ============================ */
@@ -223,6 +178,7 @@ header{
     font-size: var(--m-font-size);
     text-align: left;
     width: 100%;
+    padding: 1rem;
 }
 
 /* ============== Acerca de mi ========================= */
@@ -239,9 +195,6 @@ header{
     gap: 60px;
 }
 
-.descargar-cv-responsive{
-    display: none;
-}
 
 /* Animaciones  */
 
