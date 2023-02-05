@@ -18,7 +18,6 @@
     margin:10px 0;
     padding-bottom:10px;
     width: 237px;
-    color:var(--primary-color-violet);
     border-bottom:var(--border-white-m);
 }
 input{
@@ -40,7 +39,6 @@ input:focus{
     display:block;
     margin:28px 0 0;
     font-size:14px;
-    color:var(--primary-color-violet);
 }
 button{
     float:right;

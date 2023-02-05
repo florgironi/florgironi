@@ -94,6 +94,15 @@ header{
     margin: 1rem;
 }
 
+/* ------------------------ NAV RESPONSIVE ---------------------  */
+
+.dropdown{
+    display: none;
+}
+
+
+/* ------------------------ CURRICULUM ---------------------  */
+
 .descargar-cv i{
     margin-left: 8px;
 }
@@ -114,7 +123,7 @@ header{
     border:2px solid var(--secundary-color-violet);
     transition: all 1.5s;
 }
-/* ======================= Bton de descarga de cv RESPONSIVE */
+/* ======================= Bton de descarga de cv RESPONSIVE ======================*/
 .descargar-cv-responsive i{
     margin-left: 8px;
     display: none;
