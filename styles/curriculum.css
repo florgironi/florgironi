@@ -20,24 +20,3 @@
     border:2px solid var(--secundary-color-violet);
     transition: all 1.5s;
 }
-/* ======================= Bton de descarga de cv RESPONSIVE ======================*/
-.descargar-cv-responsive i{
-    margin-left: 8px;
-    display: none;
-}
-#cv-responsive{
-    display: flex;
-    text-decoration: none;
-    border-radius: 15px;
-    height: 4rem;
-    align-items: center;
-    justify-content: center;
-    background: var(--primary-color-violet);
-    justify-content: center;
-    color: var(--secundary-color-violet);
-    margin: 3rem;
-    width: 15rem;
-}
-.descargar-cv-responsive{
-    display: none;
-}
