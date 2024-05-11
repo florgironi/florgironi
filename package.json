@@ -1,0 +1,18 @@
+{
+  "name": "florgironi",
+  "version": "1.0.0",
+  "description": "Esta es mi pagina web donde muestro quien soy, mi trayectoria, que me inspiro a ir por el camino del dearrollo. Destaco lo que se hacer de forma visual, espero que lo disfruten 🥰",
+  "main": "index.js",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "astro": "^4.8.2"
+  }
+}
