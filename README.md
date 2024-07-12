@@ -1,6 +1,6 @@
 # Mi-pagina-Web
-Esta es mi pagina web donde muestro quien soy, mi trayectoria, que me inspiro a ir por el camino del dearrollo. Destaco lo que se hacer de forma visual, espero que lo disfruten 🥰
+Bienvenido a mi página web, un espacio donde comparto mi trayectoria profesional y personal. Aquí podrás conocer quién soy, qué me inspira y cómo he llegado a especializarme en el desarrollo y el análisis de datos. He diseñado esta página desde cero, utilizando HTML semántico para mejorar la visibilidad en motores de búsqueda y asegurar que todas las metas estén correctamente implementadas.
 
-Me encarge del diseño desde cero, use Html semantico para la visualizacion en paginas de busqueda, me encargue de que las metas sean las correctas. 
-Hice un analisis con LightHouse para comprobar Rendimiento, Accesibilidad, SEO, y Recomendaciones. Lo optimice para que sea perfecto.
+Para garantizar la mejor experiencia posible, realicé un análisis exhaustivo con LightHouse, evaluando rendimiento, accesibilidad, SEO y siguiendo las recomendaciones para optimización. Todo esto con el objetivo de ofrecer una página web perfectamente optimizada y funcional.
 
+Anteriormente me desempeñaba como desarrolladora frontend, pero actualmente mi enfoque está en el análisis de datos. Espero que disfruten explorando mi trabajo tanto como yo disfruté creándolo.
